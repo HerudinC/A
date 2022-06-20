@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="title" content="GoToMoon">
+  <meta name="description"
+  content="GoToMoon adalah website yang berisi kumpulan Tools yang dibuat oleh Herudin, untuk tugas DTS x Progate Javascript Api Kelas C.">
+  <meta name="keywords" content="Go, To, Moon, Go To Moon, Herudin, Web, Tools, Portfolio">
+  <meta name="theme-color" content="#000000">
+  <meta name="author" content="Herudin">
+
+  <!-- link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- Custome CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- title -->
+  <title>GoToMoon</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="title green" id="logo">
+        GoToMoon
+      </div>
+
+      <!-- list item -->
+      <div class="nav">
+        <a href="#home" class="nav-link grey">Home</a>
+        <a href="#tools" class="nav-link grey">Tools</a>
+        <a href="#contact" class="nav-link grey">Contact</a>
+      </div>
+
+      <!-- menu mobile -->
+      <div class="menu">
+        <span class="teks">Menu</span>
+      </div>
+    </nav>
+    <!-- end navbar -->
+  </header>
+  <!-- end header -->
+
+  <!-- main -->
+  <main>
+
+    <!-- Page Hero -->
+    <div class="hero" id="home">
+      <div class="title-hero grey">
+        "Hello World"
+      </div>
+      <p class="desc">
+        GoToMoon adalah website yang berisi kumpulan Tools yang dibuat oleh Herudin, untuk tugas DTS x Progate Javascript Api Kelas C.
+      </p>
+    </div>
+
+    <!-- Page Tools -->
+    <div class="tools" id="tools">
+
+      <div class="title-tools">
+        "Go To Tools"
+      </div>
+      <span id="line"></span>
+      <!-- card -->
+      <div class="card" id="stalkInstagram">
+        <div class="icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="name-tools">
+          Stalk Tiktok
+        </div>
+        <div class="desc-tool">
+          Stalk Tiktok dan dapatkan informasi tentang followers, Following, Likes, Video,
+          dan Foto Profil.
+        </div>
+      </div>
+
+      <div class="card" id="nasihatGenerator">
+        <div class="icon">
+          <i class="fa-solid fa-comment-dots"></i>
+        </div>
+        <div class="name-tools">
+          Nasihat Generator
+        </div>
+        <div class="desc-tool">
+          Dapatkan nasihat untuk hidup lebih baik kedepannya.
+        </div>
+      </div>
+
+      <div class="card" id="warnaGenerator">
+        <div class="icon">
+          <i class="fa-solid fa-swatchbook"></i>
+        </div>
+        <div class="name-tools">
+          Warna Generator
+        </div>
+        <div class="desc-tool">
+          Menghasilkan Hex, RGB, dan HSL.
+        </div>
+      </div>
+      <div class="card" id="coming-soon">
+        <div class="icon">
+          <i class="fa-solid fa-compact-disc"></i>
+        </div>
+        <div class="name-tools">
+          Cek Album
+        </div>
+        <div class="desc-tool">
+          Coming Soon..
+        </div>
+      </div>
+      <div class="card" id="coming-soon">
+        <div class="icon">
+          <i class="fa-solid fa-download"></i>
+        </div>
+        <div class="name-tools">
+          Sosial Media Download
+        </div>
+        <div class="desc-tool">
+          Coming Soon..
+        </div>
+      </div>
+      <div class="card" id="coming-soon">
+        <div class="icon">
+          <i class="fa-solid fa-user-astronaut"></i>
+        </div>
+        <div class="name-tools">
+          Cek Username Game
+        </div>
+        <div class="desc-tool">
+          Coming Soon..
+        </div>
+      </div>
+      <div class="card" id="coming-soon">
+        <div class="icon">
+          <i class="fa-solid fa-baby-carriage"></i>
+        </div>
+        <div class="name-tools">
+          Deteksi Umur
+        </div>
+        <div class="desc-tool">
+          Coming Soon..
+        </div>
+      </div>
+      <div class="card" id="coming-soon">
+        <div class="icon">
+          <i class="fa-solid fa-note-sticky"></i>
+        </div>
+        <div class="name-tools">
+          Cari Stiker
+        </div>
+        <div class="desc-tool">
+          Coming Soon..
+        </div>
+      </div>
+
+      <!-- modal form Stalk-->
+      <div class="modal-form" id="modalStalk">
+
+        <div class="modal-card">
+
+          <div class="modal-header">
+            <div class="modal-name">
+              Stalk Tiktok
+            </div>
+            <span class="close" id="closeStalk">X</span>
+          </div>
+
+          <div class="modal-input">
+            <label for="username">Username</label>
+            <input type="text" id="user" placeholder="Masukan username">
+            <button id="getUsername">Stalk</button>
+          </div>
+
+          <div class="result">
+            <img src="" alt="profile" id="profile">
+            <p class="title-result">
+              USERNAME
+            </p>
+            <span id="username"></span>
+
+            <p class="title-result">
+              NICKNAME
+            </p>
+            <span id="nickname"></span>
+
+            <p class="title-result">
+              BIO
+            </p>
+            <span id="bio"></span>
+
+            <p class="title-result">
+              FOLLOWERS
+            </p>
+            <span id="followers"></span>
+
+            <p class="title-result">
+              FOLLOWING
+            </p>
+            <span id="following"></span>
+
+            <p class="title-result">
+              LIKES
+            </p>
+            <span id="likes"></span>
+
+            <p class="title-result">
+              VIDEO
+            </p>
+            <span id="video"></span>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end stalk -->
+
+      <!-- modal form Stalk-->
+      <div class="modal-form" id="modalNasihat">
+
+        <div class="modal-card">
+
+          <div class="modal-header">
+            <div class="modal-name">
+              Nasihat Generator
+            </div>
+            <span class="close" id="closeNasihat">X</span>
+          </div>
+          <!-- content -->
+          <div class="result-nasihat">
+            <div class="nasihat-id">
+              <p class="titleNasihat">
+                Nasihat #<span id="no"></span>
+              </p>
+            </div>
+            <div class="nasihat-teks">
+              <h3 id="nasihat">
+              </h3>
+            </div>
+            <div id="getNasihat">
+              Nasihat Baru
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end nasihat generator -->
+
+      <!-- Warna Generator -->
+      <div class="modal-form" id="modalWarna">
+
+        <div class="modal-card">
+
+          <div class="modal-header">
+            <div class="modal-name">
+              Warna Generator
+            </div>
+            <span class="close" id="closeWarna">X</span>
+          </div>
+          <!-- content -->
+          <div class="result-warna">
+            <div class="title-preview">
+              Preview
+            </div>
+            <div class="preview">
+            </div>
+            <div class="btn" id="getWarna">
+              Generate
+            </div>
+            <div class="result">
+              <div class="box">
+                <p class="color">
+                  Hex
+                </p>
+                <span id="hex">
+                </span>
+              </div>
+              <div class="box">
+                <p class="color">
+                  RGB
+                </p>
+                <span id="rgb">
+                </span>
+              </div>
+              <div class="box">
+                <p class="color">
+                  HSL
+                </p>
+                <span id="hsl">
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <!-- end main -->
+
+    <!-- Contact -->
+    <div class="contact" id="contact">
+      <div class="title-contact">
+        "Go To Contact"
+      </div>
+
+      <div class="desc-contact">
+        Hubungi Saya
+      </div>
+      <!-- input user -->
+      <div class="form-input">
+        <label for="input-user" class="username">Nama</label>
+        <input type="text" id="namaUser" placeholder="Masukan nama anda">
+        <!-- <span class="alert" id="lognama"></span> -->
+      </div>
+
+      <!-- input user -->
+      <div class="form-input">
+        <label for="input-email" class="email">Email</label>
+        <input type="email" id="emailUser" placeholder="Masukan email anda">
+        <!-- <span class="alert" id="logemail"></span> -->
+      </div>
+
+      <div class="form-input">
+        <label for="input-pesan">Pesan</label>
+        <textarea id="pesanUser" placeholder="Masukan pesan"></textarea>
+        <!-- <span class="alert" id="logpesan"></span> -->
+      </div>
+
+      <!-- button -->
+      <div class="form-button">
+        <div class="button" id="send" disabled>
+          Kirim
+        </div>
+        <div class="button" id="reset">
+          Ulang
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="title-footer">
+        Build with <span id="kelip"> &#9829;</span> by <span id="kelip">Herudin</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
